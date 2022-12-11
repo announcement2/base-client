@@ -31,7 +31,7 @@ def announce(message):
     try:
         r = requests.post('{}/make_announcement'.format(app.server_url), data={
             'name': app.name,
-            'name_id': app.name
+            'name_id': app.name,
             'message': message
         })
     except:
