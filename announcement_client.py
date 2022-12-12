@@ -30,7 +30,7 @@ def announcement_callback(func):
 def announce(message, name):
     try:
         r = requests.post('{}/make_announcement'.format(app.server_url), data={
-            'name': app.name,
+            'name': name,
             'name_id': app.name,
             'message': message
         })
